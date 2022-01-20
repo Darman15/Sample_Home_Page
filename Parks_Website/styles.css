@@ -1,0 +1,407 @@
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif, Arial, Helvetica;
+  color: #333;
+  background-color: #f3f8f7;
+}
+
+/* Navbar CSS */
+nav {
+  background-color: #000;
+  color: #f3f8f7;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav .mainMenu {
+  display: flex;
+  list-style-type: none;
+  padding-right: 150px;
+}
+
+nav .mainMenu li {
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f3f8f7;
+  font-size: 1.5rem;
+}
+
+nav .mainMenu li a:hover {
+  background-color: #fa8a01;
+}
+
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: rgb(0, 110, 225);
+}
+
+.fa-instagram:hover {
+  color: #c13584;
+}
+
+.fa-linkedin:hover {
+  color: #283e4a;
+}
+
+nav .logo {
+  margin: 6px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* home showcaseOne */
+
+#showcase {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+
+#showcase::before {
+  content: "";
+  background: url("images/showcaseOneimg.jpg") no-repeat center center/cover;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.7;
+}
+#showcase h1,
+#showcase p,
+#showcase button {
+  position: relative;
+}
+
+.showcaseContainer {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 15vh 20px;
+}
+
+.showcaseContainer h1 {
+  color: #f3f8f7;
+  font-weight: 900;
+  font-size: 4em;
+  line-height: 1em;
+  padding-bottom: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.showcaseContainer p {
+  color: #f3f8f7;
+  font-size: 23px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#showcaseTwo {
+  width: 100%;
+  height: 600px;
+  background-color: black;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+}
+
+#showcaseTwo::before {
+  content: "";
+  background: url("images/showcaseTwoImage.jpg") no-repeat center center/cover;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+#showcaseTwo h1,
+#showcaseTwo p,
+#showcaseTwo button {
+  position: relative;
+}
+
+.showcaseTwoContainer {
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 15vh 20px;
+}
+
+.showcaseTwoContainer h1 {
+  color: #f3f8f7;
+  font-weight: 900;
+  font-size: 4em;
+  line-height: 1em;
+  padding-bottom: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.showcaseTwoContainer p {
+  color: #f3f8f7;
+  font-size: 23px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.showcaseBtnContainer {
+  cursor: pointer;
+  text-align: center;
+}
+
+.showcaseBtnContainer a button {
+  color: #f3f8f7;
+  background-color: #fa8a01;
+  font-weight: 900;
+  font-size: 22px;
+  padding: 14px 20px;
+  border-radius: 0;
+  border: 1px solid transparent;
+}
+
+.fillerOne {
+  width: 100%;
+  height: 50px;
+  background-color: #fa8a01;
+}
+
+.homepageSection {
+  position: relative;
+  width: 100%;
+  padding: 30px 338.7px;
+}
+
+.homepageSection .welcomeSectionContainer {
+  padding: 0 15px;
+}
+
+.welcomeSectionContainer h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.spacer {
+  height: 30px;
+  margin: 0;
+}
+
+.welcomeSectionGreet {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.greetPicture {
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.welcomeSectionGreet p {
+  padding: 15px 15px;
+  font-size: 14px;
+}
+
+/* homepage services section */
+
+.servicesHeading {
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.container {
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  padding: 20px;
+}
+
+.box {
+  background-color: #fa8a01;
+  padding: 40px;
+  color: #f3f8f7;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(225, 225, 225, 0.5);
+
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  transform: skew(20deg);
+  opacity: 0.2;
+  transition: ease-in-out 0.5s;
+}
+
+.box:hover::before {
+  left: 120%;
+}
+
+.box i {
+  color: #f3f8f7;
+  margin-bottom: 1.5rem;
+}
+
+.box h4 {
+  margin-bottom: 1.5rem;
+  font-size: 20px;
+  color: #f3f8f7;
+}
+
+.box p {
+  line-height: 24px;
+  letter-spacing: 0.025rem;
+  margin-bottom: 20px;
+  color: #f3f8f7;
+}
+
+.readmore {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #dfdfdf;
+  position: relative;
+}
+
+.readmore:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 120px;
+  bottom: 0;
+  height: 0.125rem;
+  width: 20px;
+  margin: auto;
+}
+
+.box:hover i,
+.box:hover h4,
+.box:hover p {
+  transform: translateY(-0.5rem);
+}
+
+.readmore:hover {
+  color: #000;
+}
+/* Media Queries */
+
+/* Navbar */
+
+@media (max-width: 1100px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: top 1s ease;
+    display: none;
+  }
+
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .openMenu {
+    display: block;
+  }
+
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+    font-size: 1.6rem;
+  }
+
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+
+  /* homepage */
+
+  .homepageSection {
+    padding: 10px 0;
+  }
+
+  /* servicesection */
+
+  .container {
+    padding: 0;
+  }
+}
